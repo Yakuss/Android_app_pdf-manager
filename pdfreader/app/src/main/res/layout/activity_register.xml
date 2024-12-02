@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Register">
+
+<TextView
+    android:id="@+id/registerTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Create Account"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_marginTop="32dp"
+    app:layout_constraintBottom_toTopOf="@id/emailEditText"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/emailEditText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="Email"
+    android:inputType="textEmailAddress"
+    android:textColorHint="#888"
+    android:padding="16dp"
+    android:background="@drawable/rounded_input"
+    app:layout_constraintTop_toBottomOf="@id/registerTitle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="32dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp" />
+
+<EditText
+    android:id="@+id/passwordEditText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:textColorHint="#888"
+    android:padding="16dp"
+    android:background="@drawable/rounded_input"
+    app:layout_constraintTop_toBottomOf="@id/emailEditText"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp" />
+
+<EditText
+    android:id="@+id/confirmPasswordEditText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="Confirm Password"
+    android:inputType="textPassword"
+    android:textColorHint="#888"
+    android:padding="16dp"
+    android:background="@drawable/rounded_input"
+    app:layout_constraintTop_toBottomOf="@id/passwordEditText"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp" />
+
+<Button
+    android:id="@+id/registerButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Register"
+    android:textSize="18sp"
+    android:backgroundTint="#6200EE"
+    android:textColor="#FFFFFF"
+    app:layout_constraintTop_toBottomOf="@id/confirmPasswordEditText"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="32dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp" />
+
+<TextView
+    android:id="@+id/loginRedirect"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Already have an account? Login"
+    android:textSize="14sp"
+    android:textColor="#6200EE"
+    app:layout_constraintTop_toBottomOf="@id/registerButton"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"
+    android:gravity="center" />
+</androidx.constraintlayout.widget.ConstraintLayout>

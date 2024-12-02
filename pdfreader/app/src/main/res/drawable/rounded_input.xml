@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid background color for the input field -->
+    <solid android:color="#f2f2f2" />  <!-- Light gray background -->
+
+    <!-- Rounded corners for the input field -->
+    <corners android:radius="16dp" />  <!-- Radius for rounded corners -->
+
+    <!-- Border color and thickness -->
+    <stroke android:color="#6200EE" android:width="2dp" /> <!-- Purple border -->
+</shape>

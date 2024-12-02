@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "718781972806",
+    "project_id": "pdfreader-36399",
+    "storage_bucket": "pdfreader-36399.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718781972806:android:fdae168117a10d32b7a547",
+        "android_client_info": {
+          "package_name": "com.example.pdfreader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfAddKR44WPXgIXujT6_vLYLuPQyRh8Ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

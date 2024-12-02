@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pdfreader"
+        tools:targetApi="31">
+        <activity
+            android:name=".AllBooksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ModifyBookTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListBookTypesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ModifyBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListBooksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddBookTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Adding"
+            android:exported="false" /> <!-- Register Activity -->
+        <activity
+            android:name=".Register"
+            android:exported="false" /> <!-- Login Activity (first activity to launch) -->
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Main Activity (no need to be MAIN or LAUNCHER) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <!-- No need for MAIN/LAUNCHER, this activity will be navigated to after login -->
+        </activity>
+    </application>
+
+</manifest>
